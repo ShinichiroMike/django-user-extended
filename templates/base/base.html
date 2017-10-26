@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+
+	{% block extrastatic %}
+	{% endblock %}
+
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+	<title>{% block title %}Document {% endblock %}</title>
+</head>
+<body>
+<div class="container">
+
+	{% block navbar %}
+		<h6>navbar</h6>
+	{% endblock %}
+
+
+	{% block content %}
+	<h4>	Bloque de contenido		</h4>
+	{% endblock %}
+
+
+	{% block footer %}
+		<h6>footer</h6>
+	{% endblock%}
+</div>
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+	{% block extrajs %}
+	{% endblock %}
+
+
+</body>
+</html>

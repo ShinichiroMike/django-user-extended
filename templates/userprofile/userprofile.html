@@ -1,0 +1,6 @@
+<ul>
+  <li>Username: {{ user.username }}</li>
+  <li>bio: {{ user.profile.bio }}</li>
+  <li>birth date: {{ user.profile.birth_date }}</li>
+  <a href="{% url 'logout' %}">Logout</a>
+</ul>
